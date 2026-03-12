@@ -1,0 +1,52 @@
+[
+  {
+    "divisi": "Human Development Division(HDD)",
+    "icon": "🚀",
+    "color": "#5A2D82",
+    "programs": [
+      { "nama": "P1", "desc": "(DESKRIPSI)" },
+      { "nama": "P2", "desc": "(DESKRIPSI)" },
+      { "nama": "P3", "desc": "(DESKRIPSI)" }
+    ]
+  },
+  {
+    "divisi": "Creative Media Division(CMD)",
+    "icon": "📷",
+    "color": "#8A63D2",
+    "programs": [
+      { "nama": "P1", "desc": "(DESKRIPSI)" },
+      { "nama": "P2", "desc": "(DESKRIPSI)" },
+      { "nama": "P3", "desc": "(DESKRIPSI)" }
+    ]
+  },
+  {
+    "divisi": "Social Impact Division(SID)",
+    "icon": "📣",
+    "color": "#D4AF37",
+    "programs": [
+      { "nama": "P1", "desc": "(DESKRIPSI)" },
+      { "nama": "P2", "desc": "(DESKRIPSI)" },
+      { "nama": "P3", "desc": "(DESKRIPSI)" }
+    ]
+  },
+  {
+    "divisi": "Talent Interest Division(TID)",
+    "icon": "🎨🎭🎬",
+    "color": "#5A2D82",
+    "programs": [
+      { "nama": "P1", "desc": "(DESKRIPSI)" },
+      { "nama": "P2", "desc": "(DESKRIPSI)" },
+      { "nama": "P3", "desc": "(DESKRIPSI)" }
+    ]
+  },
+  {
+    "divisi": "Business Innovation Division(BID)",
+    "icon": "💰",
+    "color": "#8A63D2",
+    "programs": [
+      { "nama": "P1", "desc": "(DESKRIPSI)" },
+      { "nama": "P2", "desc": "(DESKRIPSI)" },
+      { "nama": "P3", "desc": "(DESKRIPSI)" }
+    ]
+  }
+]

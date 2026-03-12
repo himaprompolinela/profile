@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divisi — HIMAPROM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .divisi-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-bottom: 80px;
+    }
+    .divisi-detail-card {
+      background: var(--white);
+      border: 1px solid var(--medium-gray);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .divisi-detail-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--deep-purple), var(--soft-violet));
+    }
+    .divisi-detail-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--soft-violet);
+    }
+    .divisi-detail-icon { font-size: 48px; margin-bottom: 20px; }
+    .divisi-detail-title { font-size: 22px; color: var(--deep-purple); font-weight: 800; margin-bottom: 12px; }
+    .divisi-detail-desc { font-size: 14px; color: var(--text-muted); line-height: 1.8; margin-bottom: 24px; }
+    .divisi-programs-list { display: flex; flex-direction: column; gap: 8px; }
+    .divisi-program-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--deep-purple);
+      background: rgba(90,45,130,0.07);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-weight: 600;
+      align-self: flex-start;
+    }
+    @media(max-width:768px) {
+      .divisi-detail-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar dark-hero" id="navbar">
+  <div class="navbar-container">
+    <a href="../index.html" class="navbar-logo">
+      <div class="logo-icon"></div>
+      <span class="logo-text">HIMAPROM</span>
+    </a>
+    <ul class="navbar-nav">
+      <li><a href="../index.html" class="nav-link">Home</a></li>
+      <li><a href="tentang.html" class="nav-link">Tentang</a></li>
+      <li><a href="divisi.html" class="nav-link active">Divisi</a></li>
+      <li><a href="program.html" class="nav-link">Program Kerja</a></li>
+      <li><a href="galeri.html" class="nav-link">Galeri</a></li>
+      <li><a href="angkatan.html" class="nav-link">Angkatan</a></li>
+      <li><a href="struktur.html" class="nav-link">Struktur</a></li>
+      <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+    </ul>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="../index.html" class="nav-link">🏠 Home</a>
+  <a href="tentang.html" class="nav-link">📖 Tentang</a>
+  <a href="divisi.html" class="nav-link">🎯 Divisi</a>
+  <a href="program.html" class="nav-link">📋 Program Kerja</a>
+  <a href="galeri.html" class="nav-link">🖼 Galeri</a>
+  <a href="angkatan.html" class="nav-link">👥 Angkatan</a>
+  <a href="struktur.html" class="nav-link">🏢 Struktur</a>
+  <a href="kontak.html" class="nav-link">✉ Kontak</a>
+</div>
+<div class="mobile-overlay"></div>
+
+<header class="page-header">
+  <div class="container page-header-content">
+    <span class="page-header-label">◆ ORGANISASI</span>
+    <h1 class="page-header-title">Divisi HIMAPROM</h1>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label reveal">◆ LIMA DIVISI KREATIF</span>
+      <h2 class="section-title reveal">Unit Kerja Kami</h2>
+      <p class="section-desc reveal reveal-delay-1">Setiap divisi memiliki fokus keahlian yang unik dan saling bersinergi menciptakan ekosistem media yang kuat.</p>
+    </div>
+    <div class="divisi-detail-grid">
+      <div class="divisi-detail-card reveal">
+        <div class="divisi-detail-icon">🚀</div>
+        <div class="divisi-detail-title">Human Development Division(HDD)</div>
+        <p class="divisi-detail-desc">Divisi yang berfokus pada pengembangan kemampuan....</p>
+        <div class="divisi-programs-list">
+          <span class="divisi-program-tag">Proker 1</span>
+          <span class="divisi-program-tag">Proker 2</span>
+          <span class="divisi-program-tag">Proker 3</span>
+        </div>
+      </div>
+      <div class="divisi-detail-card reveal reveal-delay-1">
+        <div class="divisi-detail-icon">📷</div>
+        <div class="divisi-detail-title">Creative Media Division(CMD)</div>
+        <p class="divisi-detail-desc">Divisi yang mengelola...</p>
+        <div class="divisi-programs-list">
+          <span class="divisi-program-tag">Proker 1</span>
+          <span class="divisi-program-tag">Proker 2</span>
+          <span class="divisi-program-tag">Proker 3</span>
+        </div>
+      </div>
+      <div class="divisi-detail-card reveal reveal-delay-2">
+        <div class="divisi-detail-icon">📣</div>
+        <div class="divisi-detail-title">Social Impact Division</div>
+        <p class="divisi-detail-desc">Divisi yang bertanggung jawab atas...</p>
+        <div class="divisi-programs-list">
+          <span class="divisi-program-tag">Proker 1</span>
+          <span class="divisi-program-tag">Proker 2</span>
+          <span class="divisi-program-tag">Proker 3</span>
+        </div>
+      </div>
+      <div class="divisi-detail-card reveal reveal-delay-3">
+        <div class="divisi-detail-icon">🎨🎭🎬</div>
+        <div class="divisi-detail-title">Talent Interest Division(TID)</div>
+        <p class="divisi-detail-desc">Divisi yang mengelola... </p>
+        <div class="divisi-programs-list">
+          <span class="divisi-program-tag">Proker 1</span>
+          <span class="divisi-program-tag">Proker 2</span>
+          <span class="divisi-program-tag">Proker 3</span>
+        </div>
+      </div>
+      <div class="divisi-detail-card reveal" style="grid-column:1/-1;max-width:600px;margin:0 auto;">
+        <div class="divisi-detail-icon">💰</div>
+        <div class="divisi-detail-title">Business Innovation Division(BID)</div>
+        <p class="divisi-detail-desc">Divisi yang merancang dan melaksanakan berbagai....</p>
+        <div class="divisi-programs-list">
+          <span class="divisi-program-tag">Proker 1</span>
+          <span class="divisi-program-tag">Proker 2</span>
+          <span class="divisi-program-tag">Proker 3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">HIMAPROM</div>
+        <div class="footer-tagline">// Melestarikan budaya melalui inovasi media</div>
+        <p class="footer-desc">Himpunan Mahasiswa Produksi Media.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">📸</a>
+          <a href="#" class="social-link">▶️</a>
+          <a href="#" class="social-link">✉️</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Navigasi</div>
+        <div class="footer-links">
+          <a href="../index.html">Home</a>
+          <a href="tentang.html">Tentang</a>
+          <a href="divisi.html">Divisi</a>
+          <a href="program.html">Program Kerja</a>
+          <a href="galeri.html">Galeri</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Lainnya</div>
+        <div class="footer-links">
+          <a href="angkatan.html">Angkatan</a>
+          <a href="struktur.html">Struktur</a>
+          <a href="kontak.html">Kontak</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,0.08);">
+    <div class="container"><div class="footer-bottom">
+      <span>© 2025 HIMAPROM</span>
+      <span class="footer-bottom-ornament">◆ HIMAPROM ◆</span>
+    </div></div>
+  </div>
+</footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
